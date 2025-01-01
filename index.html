@@ -68,7 +68,7 @@
         footer a:hover {
             text-decoration: underline;
         }
-        .poem-button {
+        .poem-button, .music-button {
             margin-top: 20px;
             padding: 10px 20px;
             background: #ff4500;
@@ -80,7 +80,7 @@
             box-shadow: 0 5px #ff6347;
             transition: background 0.3s, transform 0.2s;
         }
-        .poem-button:hover {
+        .poem-button:hover, .music-button:hover {
             background: #32cd32;
             transform: scale(1.05);
         }
@@ -96,7 +96,7 @@
             font-family: 'Georgia', serif;
             color: #8b4513;
             box-shadow: 0 0 15px #8b4513;
-            text-align: left
+            text-align: left;
         }
         .poem p {
             margin: 0;
@@ -136,74 +136,22 @@
         <p>
             Faz muito tempo que não escrevo.<br>
             Na verdade faz muito tempo que não experimento as coisas q eu experimentei com vc; <br>
-            Na verdade fazia muito tempo que sequer eu sentia.<br>
-            Acho muito prazeroso fazer seu café da manha, de passear de mao dada contigo,<br>
-            de te fazer rir,<br>
-            te dar cócegas,<br>
-            Gosto, principalmente, de te ver descobrindo coisas novas por contra propria,<br>
-            de conquistar coisas novas por conta propria.<br><br>
-
-            Pela manha, tinha o costume de apenas ignorar meus pensamento;<br>
-            acordar com você me ensinou a apreciar as manhas;<br>
-            Acordar com voce me ensinou calmaria<br>
-            Calmaria de ouvir o canto dos passarinhos,<br>
-            Calmaria de esperar o sol aquecer sem pressa,<br>
-            Calmaria de não romper o abraço até que você o fizesse<br>
-            Calmaria de entender que nao vai ser tao rapido quanto eu quero<br>
-            Calmaria de respeitar o seu passo,<br><br>
-
-            Mas agora, o dia amanhce diferente,<br>
-            O frio e a distancia passeam entre as minhas costelas,<br> 
-            uma sensação inédita e incomoda: o Ciúme<br>
-            Mas não um ciume cego.<br>
-            mas aquele temor quase respeitoso<br> 
-            de perder o privilégio  de evoluir ao seu lado,<br>
-            de dividir cada descoebrta,<br>
-            de criar juntos um altar invisivel ao que somos.<br>
-            Ignoro e rogo pragas a quem me chamar de prepotente.<br><br>
-
-            Me pergunto sobre os alicerces das teorias.<br>
-            Se nas colunas da não monogamia houve espaço<br>
-            para os que nascem com o chão já rachado.<br><br>
-
+            Na verdade fazia muito tempo que sequer eu sentia.<br><br>
 
             Hoje, a firmeza me fugiu das mãos.<br>
             As respostas não chegam,<br>
             os medos permanecem solitários,<br>
             os silêncios tornaram-se muros altos demais para escalar.<br><br>
 
-            Dói quando minhas perguntas se perdem no vazio,<br>
-            quando minhas angústias são escutadas, mas nunca acolhidas.<br>
-            Dói mais ainda quando o que pesa no meu peito<br>
-            é tratado como leve demais para ser levado a sério.<br>
-            Suas respostas chegam como ecos frágeis,<br>
-            justificativas moldadas pelo espelho do ego,<br>
-            suaves e insignificantes para você,<br>
-            mas avassaladoras para mim.<br><br>
-
-
-            O sabor de se sentir amado me foi tomado,<br>
-            e talvez tenha sido voce quem o levou.<br>
-            Ou talvez tenha sido o eco da dúvida,<br>
-            um deus antigo que nunca soube dizer meu nome<br>
-            -e quem um dia sequer soube ?-<br><br>
-
-            Onde estão todas as forças <br>
-            e ritos <br>
-            e cantos <br>
-            e pontos<br>
-            de todos os Deuses que existem ?<br>
-            -e ainda de todos os outros que não foram inventados ainda-<br>
-            Onde está o calor que sentira outrora ?<br>
             Onde nos estamos ?<br><br>
-
             Penso no amor como verbo,<br>
             e tenho certeza que ainda amo.<br>
             Mas sei também que minha pele já não suporta o peso do açoite,<br>
             nem de você, nem de ninguém.<br>
-
         </p>
     </div>
+
+    <button class="music-button" onclick="playMusic()">Clique para ouvir nossa música 🎵</button>
 
     <div class="gif-container">
         <img src="ursinho-pooh-rebolando1.gif" alt="Ursinho Pooh rebolando 1">
@@ -226,6 +174,10 @@
             } else {
                 poem.style.display = 'none';
             }
+        }
+
+        function playMusic() {
+            window.open('https://www.youtube.com/watch?v=t0iW__yQHBM', '_blank');
         }
     </script>
 </body>
